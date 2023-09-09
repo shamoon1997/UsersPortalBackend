@@ -19,7 +19,7 @@ db.connect((err) => {
 });
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 9001;
 
 app.use(cors());
 // Define a GET endpoint for reading data from the database
